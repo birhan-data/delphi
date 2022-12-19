@@ -1,0 +1,54 @@
+
+img {
+  display: block;
+  width: 300px;
+  margin: auto;
+  align-self: center;
+}
+form {
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+}
+table {
+  width: 100%;
+}
+table, th, td {
+  border:1px solid green;
+}
+tr {
+  width: 100%;
+}
+
+tr > th:first-of-type {
+  width: 40%;
+}
+tr > td:first-of-type {
+  width: 40%;
+  padding: 1em;
+}
+
+td {
+  text-align: center;
+}
+select {
+  width: 90%;
+  height: 40px;
+  text-align: center;
+  font-size: 16px;
+  
+}
+button {
+  width: 200px;
+  height: 50px;
+  border-radius: 8px;
+  background-color: lightgreen;
+  box-shadow: 5px 6px rgb(98, 95, 95);
+  font-size: 20px;
+}
+
+button:hover {
+  width: 205px;
+  height: 53px;
+  cursor: pointer;
+}
