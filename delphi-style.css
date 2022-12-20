@@ -5,16 +5,42 @@ img {
   margin: auto;
   align-self: center;
 }
-form {
+form, h3 {
   width: 80%;
   margin: auto;
   margin-top: 50px;
 }
+
+.heading-container {
+  text-align: center;
+}
+
+p {
+  width: 60%;
+  margin: auto;
+  font-size: 1.1rem;
+  margin-top: .5rem;
+  text-align: justify;
+}
+p:first-of-type {
+  margin-top: 2rem;
+}
+form > p {
+  width: 100%;
+}
 table {
   width: 100%;
 }
+form > * {
+  margin-bottom: 2rem;
+}
 table, th, td {
   border:1px solid green;
+  border-collapse: collapse;
+}
+
+fieldset {
+  border: 1px solid green;
 }
 tr {
   width: 100%;
