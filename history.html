@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./delphi-style.css">
+  <title>Document</title>
+</head>
+<body>
+  <img src="./haset-logo.jpeg" alt="Haset Logo">
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLSeGPw7ck-DPTN0THr-CZOda9-ifBAfBsstaA0a9zAUJpHOOXA/formResponse">
+    <h4>ANC Components</h4>
+    <p>1. History</p>
+
+    <fieldset>
+      <legend>Do you think taking history should be considered as an effective ANC coverage measure?</legend>
+      <div>
+        <input type="radio" id="history_yes" name="entry.501040728" value="Yes" onclick="handleRadioClick(this);">
+        <label for="history_yes">Yes</label>
+      </div>
+      <div>
+        <input type="radio" id="history_no" name="entry.501040728" value="No" onclick="handleRadioClick(this);">
+        <label for="history_no">No</label>
+      </div>
+    </fieldset>
+
+    <fieldset class="if_yes">
+      <legend>If Yes, for which ANC visit should history taking be considered an effective ANC coverage measure? Thick
+        all it should be applied to</legend>
+
+      <div>
+        <input type="checkbox" class="anc" id="anc1" name="entry.1673651871" value="ANC 1">
+        <label for="anc1">ANC 1</label>
+      </div>
+
+      <div>
+        <input type="checkbox" class="anc" id="anc2" name="entry.1673651871" value="ANC 2">
+        <label for="anc2">ANC 2</label>
+      </div>
+      <div>
+        <input type="checkbox" class="anc" id="anc3" name="entry.1673651871" value="ANC 3">
+        <label for="anc3">ANC 3</label>
+      </div>
+
+      <div>
+        <input type="checkbox" class="anc" id="anc4" name="entry.1673651871" value="ANC 4">
+        <label for="anc4">ANC 4</label>
+      </div>
+    </fieldset>
+
+    <p class="if_yes">If you think taking history should be considered as an effective ANC coverage measure, which activity could be
+      used to measure effective ANC coverage from the activities under history? Please put the following list of
+      activities in order of importance pertaining to each ANC visit</p>
+
+    <table class="if_yes">
+      <tr>
+        <th>Activity on the intervention components</th>
+        <th class="anc1_col">ANC 1</th>
+        <th class="anc2_col">ANC 2</th>
+        <th class="anc3_col">ANC 3</th>
+        <th class="anc4_col">ANC 4</th>
+      </tr>
+      <tr>
+        <td>
+          Personal history (Identification, Date of LMP, determining EDD, Gravidity, Parity, number of alive children,
+          abortion, socioeconomic statutus, history of female genital cutting)
+        </td>
+        <td class="anc1_col"><select name="entry.1993685011">
+            <option value="NA">NA</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+          </select></td>
+        <td class="anc2_col"><select name="entry.526096930">
+            <option value="NA">NA</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+          </select></td>
+        <td class="anc3_col"><select name="entry.587443024">
+            <option value="NA">NA</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+          </select></td>
+        <td class="anc4_col"><select name="entry.190518609">
+            <option value="NA">NA</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+          </select></td>
+      </tr>
+
+      <tr>
+        <td>
+          Personal history: note any changes since first visit.
+        </td>
+        <td class="anc1_col"><select name="entry.822927192">
+            <option value="NA">NA</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+          </select></td>
+        <td class="anc2_col"><select name="entry.340379852">
+            <option value="NA">NA</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+          </select></td>
+        <td class="anc3_col"><select name="entry.1851485217">
+            <option value="NA">NA</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+          </select></td>
+        <td class="anc4_col"><select name="entry.1402736618">
+            <option value="NA">NA</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+          </select></td>
+      </tr>
+
+      <tr>
+        <td>
+          Present pregnancy (events since first visit, enquirer about anemia symptoms, abnormal changes, Hiv status,
+          check on habits)
+        </td>
+        <td class="anc1_col"><select name="entry.796296346">
+            <option value="NA">NA</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+          </select></td>
+        <td class="anc2_col"><select name="entry.825712446">
+            <option value="NA">NA</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+          </select></td>
+        <td class="anc3_col"><select name="entry.1071936740">
+            <option value="NA">NA</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+          </select></td>
+        <td class="anc4_col"><select name="entry.574465759">
+            <option value="NA">NA</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+          </select></td>
+      </tr>
+
+      <tr>
+        <td>
+          Medical History (Specific disease conditions, operations other than C/S, blood transfusions, RH status,current
+          use of medications)
+        </td>
+        <td class="anc1_col"><select name="entry.397946296">
+            <option value="NA">NA</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+          </select></td>
+        <td class="anc2_col"><select name="entry.496176491">
+            <option value="NA">NA</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+          </select></td>
+        <td class="anc3_col"><select name="entry.1676431281">
+            <option value="NA">NA</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+          </select></td>
+        <td class="anc4_col"><select name="entry.291401820">
+            <option value="NA">NA</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+          </select></td>
+      </tr>
+
+      <tr>
+        <td>
+          Medical History (relevant issues from first record, intercurrent disease, injuries,intake of medication,
+          intake of iron, other medical issues)
+        </td>
+        <td class="anc1_col"><select name="entry.2031885086">
+            <option value="NA">NA</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+          </select></td>
+        <td class="anc2_col"><select name="entry.1720143942">
+            <option value="NA">NA</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+          </select></td>
+        <td class="anc3_col"><select name="entry.801244319">
+            <option value="NA">NA</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+          </select></td>
+        <td class="anc4_col"><select name="entry.614576660">
+            <option value="NA">NA</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+          </select></td>
+      </tr>
+
+      <tr>
+        <td>
+          Obstetric history (previous stillbirth or neonatal loss, history of three or more consecutive spontaneous
+          abortion,bBirth weight of last baby < 2500 gm, birth weight of last baby> 4000 gm, last pregnancy: hospital
+            admission for hypertension or pre-eclampsia/eclampsia, periods of exclusive breast-feeding: When? For how
+            long?, thrombosis, embolus, previous surgery on reproductive tract (myomectomy, removal of septum, fistula
+            repair, cone biopsy, CS, repaired ruptured uterus, cervical circulage), Any unexpected event (pain, vaginal
+            bleeding, others)
+        </td>
+        <td class="anc1_col"><select name="entry.716153773">
+            <option value="NA">NA</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+          </select></td>
+        <td class="anc2_col"><select name="entry.620244192">
+            <option value="NA">NA</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+          </select></td>
+        <td class="anc3_col"><select name="entry.894063581">
+            <option value="NA">NA</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+          </select></td>
+        <td class="anc4_col"><select name="entry.887475707">
+            <option value="NA">NA</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+          </select></td>
+      </tr>
+
+      <tr>
+        <td>
+          Obstetric history (ask how is she feeling, review relevant issues of obstetric history from last ANC
+        </td>
+        <td class="anc1_col"><select name="entry.123936704">
+            <option value="NA">NA</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+          </select></td>
+        <td class="anc2_col"><select name="entry.518910188">
+            <option value="NA">NA</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+          </select></td>
+        <td class="anc3_col"><select name="entry.330003962">
+            <option value="NA">NA</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+          </select></td>
+        <td class="anc4_col"><select name="entry.2037207906">
+            <option value="NA">NA</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+          </select></td>
+      </tr>
+    </table>
+
+    <p>Could you please weigh the activities under history if you think they can be used to measure effective ANC
+      coverage? Please use a likert scale to weigh the activities. (Zero meaning the least relevant to measure effective
+      ANC coverage and 10 means the most significant group of interventions to measure effective ANC coverage)</p>
+    <table>
+      <tr>
+        <th>Activity on the intervention components</th>
+        <th class="anc1_col">ANC 1</th>
+        <th class="anc2_col">ANC 2</th>
+        <th class="anc3_col">ANC 3</th>
+        <th class="anc4_col">ANC 4</th>
+      </tr>
+      <tr>
+        <td>
+          Personal history (Identification, Date of LMP, determining EDD, Gravidity, Parity, number of alive children,
+          abortion, socioeconomic statutus, history of female genital cutting)
+        </td>
+        <td class="anc1_col"><select name="entry.1493788644">
+            <option value="NA">NA</option>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select></td>
+        <td class="anc2_col"><select name="entry.346282061">
+            <option value="NA">NA</option>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select></td>
+        <td class="anc3_col"><select name="entry.2090303989">
+            <option value="NA">NA</option>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select></td>
+        <td class="anc4_col"><select name="entry.58561790">
+            <option value="NA">NA</option>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select></td>
+      </tr>
+
+      <tr>
+        <td>
+          Personal history: note any changes since first visit.
+        </td>
+        <td class="anc1_col"><select name="entry.768588141">
+            <option value="NA">NA</option>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select></td>
+        <td class="anc2_col"><select name="entry.2092382715">
+            <option value="NA">NA</option>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select></td>
+        <td class="anc3_col"><select name="entry.2048762280">
+            <option value="NA">NA</option>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select></td>
+        <td class="anc4_col"><select name="entry.963770772">
+            <option value="NA">NA</option>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select></td>
+      </tr>
+
+      <tr>
+        <td>
+          Present pregnancy (events since first visit, enquirer about anemia symptoms, abnormal changes, Hiv status,
+          check on habits)
+        </td>
+        <td class="anc1_col"><select name="entry.2111416391">
+            <option value="NA">NA</option>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select></td>
+        <td class="anc2_col"><select name="entry.1682655899">
+            <option value="NA">NA</option>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select></td>
+        <td class="anc3_col"><select name="entry.1172706931">
+            <option value="NA">NA</option>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select></td>
+        <td class="anc4_col"><select name="entry.363921908">
+            <option value="NA">NA</option>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select></td>
+      </tr>
+
+      <tr>
+        <td>
+          Medical History (Specific disease conditions, operations other than C/S, blood transfusions, RH status,current
+          use of medications)
+        </td>
+        <td class="anc1_col"><select name="entry.1727513316">
+            <option value="NA">NA</option>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select></td>
+        <td class="anc2_col"><select name="entry.2127163911">
+            <option value="NA">NA</option>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select></td>
+        <td class="anc3_col"><select name="entry.1661469740">
+            <option value="NA">NA</option>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select></td>
+        <td class="anc4_col"><select name="entry.20123638">
+            <option value="NA">NA</option>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select></td>
+      </tr>
+
+      <tr>
+        <td>
+          Medical History (relevant issues from first record, intercurrent disease, injuries,intake of medication,
+          intake of iron, other medical issues)
+        </td>
+        <td class="anc1_col"><select name="entry.1631181306">
+            <option value="NA">NA</option>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select></td>
+        <td class="anc2_col"><select name="entry.1093918623">
+            <option value="NA">NA</option>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select></td>
+        <td class="anc3_col"><select name="entry.319307690">
+            <option value="NA">NA</option>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select></td>
+        <td class="anc4_col"><select name="entry.550539339">
+            <option value="NA">NA</option>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select></td>
+      </tr>
+
+      <tr>
+        <td>
+          Obstetric history (previous stillbirth or neonatal loss, history of three or more consecutive spontaneous
+          abortion,bBirth weight of last baby < 2500 gm, birth weight of last baby> 4000 gm, last pregnancy: hospital
+            admission for hypertension or pre-eclampsia/eclampsia, periods of exclusive breast-feeding: When? For how
+            long?, thrombosis, embolus, previous surgery on reproductive tract (myomectomy, removal of septum, fistula
+            repair, cone biopsy, CS, repaired ruptured uterus, cervical circulage), Any unexpected event (pain, vaginal
+            bleeding, others)
+        </td>
+        <td class="anc1_col"><select name="entry.1451014494">
+            <option value="NA">NA</option>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select></td>
+        <td class="anc2_col"><select name="entry.149758372">
+            <option value="NA">NA</option>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select></td>
+        <td class="anc3_col"><select name="entry.1830282827">
+            <option value="NA">NA</option>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select></td>
+        <td class="anc4_col"><select name="entry.1497723980">
+            <option value="NA">NA</option>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select></td>
+      </tr>
+
+      <tr>
+        <td>
+          Obstetric history (ask how is she feeling, review relevant issues of obstetric history from last ANC
+        </td>
+        <td class="anc1_col"><select name="entry.587628397">
+            <option value="NA">NA</option>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select></td>
+        <td class="anc2_col"><select name="entry.485341389">
+            <option value="NA">NA</option>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select></td>
+        <td class="anc3_col"><select name="entry.718917610">
+            <option value="NA">NA</option>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select></td>
+        <td class="anc4_col"><select name="entry.651349850">
+            <option value="NA">NA</option>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select></td>
+      </tr>
+    </table>
+    <button type="submit" id="history-btn">Submit</button>
+</form>
+<script src="./history.js"></script>
+</body>
+
+</html>

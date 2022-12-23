@@ -1,0 +1,1664 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./delphi-style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <img src="./haset-logo.jpeg" alt="Haset Logo">
+    <form
+      action="https://docs.google.com/forms/d/e/1FAIpQLSdFDGQsv1xDbF8-ywTb8KQPiMTqnM-f8uxTNQ8nukINDW8NRw/formResponse"
+    >
+      <p>2. Physical Examination</p>
+      <fieldset>
+        <legend>
+          Do you think taking a physical examination should be considered as an
+          effective ANC coverage measure?
+        </legend>
+        <div>
+          <input
+            type="radio"
+            id="physical_exam_yes"
+            name="entry.855175843"
+            value="Yes"
+            onclick="handleRadioClick(this);"
+          />
+          <label for="physical_exam_yes">Yes</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            id="physical_exam_no"
+            name="entry.855175843"
+            value="No"
+            onclick="handleRadioClick(this);"
+          />
+          <label for="physical_exam_no">No</label>
+        </div>
+      </fieldset>
+
+      <fieldset class="if_yes">
+        <legend>
+          If Yes, for which ANC visit should physical examination be considered
+          an effective ANC coverage measure? Thick all it should be applied to
+        </legend>
+
+        <div>
+          <input
+            type="checkbox"
+            id="anc1"
+            name="entry.2120210274"
+            value="ANC 1"
+            class="anc"
+          />
+          <label for="anc1">ANC 1</label>
+        </div>
+
+        <div>
+          <input
+            type="checkbox"
+            id="anc2"
+            name="entry.2120210274"
+            value="ANC 2"
+            class="anc"
+          />
+          <label for="anc2">ANC 2</label>
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            id="anc3"
+            name="entry.2120210274"
+            value="ANC 3"
+            class="anc"
+          />
+          <label for="anc3">ANC 3</label>
+        </div>
+
+        <div>
+          <input
+            type="checkbox"
+            id="anc4"
+            name="entry.2120210274"
+            value="ANC 4"
+            class="anc"
+          />
+          <label for="anc4">ANC 4</label>
+        </div>
+      </fieldset>
+
+      <p class="if_yes">
+        If you think physical examination could be considered as an effective
+        ANC coverage measure, which activity could be used to measure effective
+        ANC coverage from the activities under physical examination? Please put
+        the following list of activities in order of importance
+      </p>
+      <table class="if_yes">
+        <tr>
+          <th>Activity on the intervention components</th>
+          <th class="anc1_col">ANC 1</th>
+          <th class="anc2_col">ANC 2</th>
+          <th class="anc3_col">ANC 3</th>
+          <th class="anc4_col">ANC 4</th>
+        </tr>
+        <tr>
+          <td>General appearance (signs of physical abuse)</td>
+          <td class="anc1_col">
+            <select name="entry.1444626360">
+              <option value="NA">NA</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+            </select>
+          </td>
+          <td class="anc2_col">
+            <select name="entry.1781168546">
+              <option value="NA">NA</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+            </select>
+          </td>
+          <td class="anc3_col">
+            <select name="entry.582270046">
+              <option value="NA">NA</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+            </select>
+          </td>
+          <td class="anc4_col">
+            <select name="entry.1838013963">
+              <option value="NA">NA</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Vital signs: BP, PR, Temperature, RR;</td>
+          <td class="anc1_col">
+            <select name="entry.531111966">
+              <option value="NA">NA</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+            </select>
+          </td>
+          <td class="anc2_col">
+            <select name="entry.67554516">
+              <option value="NA">NA</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+            </select>
+          </td>
+          <td class="anc3_col">
+            <select name="entry.1168978822">
+              <option value="NA">NA</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+            </select>
+          </td>
+          <td class="anc4_col">
+            <select name="entry.775068186">
+              <option value="NA">NA</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            HEENT: Check for signs of severe anemia: pale complexion,
+            fingernails, conjunctiva, buccal mucosa, tip of tongue and shortness
+            of breath. Look for oral hygiene, dental carries
+          </td>
+          <td class="anc1_col">
+            <select name="entry.742793143">
+              <option value="NA">NA</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+            </select>
+          </td>
+          <td class="anc2_col">
+            <select name="entry.1325908460">
+              <option value="NA">NA</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+            </select>
+          </td>
+          <td class="anc3_col">
+            <select name="entry.1499561648">
+              <option value="NA">NA</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+            </select>
+          </td>
+          <td class="anc4_col">
+            <select name="entry.551674887">
+              <option value="NA">NA</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            Check for signs of jaundice record weight and height to assess the
+            mother's nutritional status
+          </td>
+          <td class="anc1_col">
+            <select name="entry.368852063">
+              <option value="NA">NA</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+            </select>
+          </td>
+          <td class="anc2_col">
+            <select name="entry.17891906">
+              <option value="NA">NA</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+            </select>
+          </td>
+          <td class="anc3_col">
+            <select name="entry.660389906">
+              <option value="NA">NA</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+            </select>
+          </td>
+          <td class="anc4_col">
+            <select name="entry.1317794629">
+              <option value="NA">NA</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Do breast examination</td>
+          <td class="anc1_col">
+            <select name="entry.1249290087">
+              <option value="NA">NA</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+            </select>
+          </td>
+          <td class="anc2_col">
+            <select name="entry.882230268">
+              <option value="NA">NA</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+            </select>
+          </td>
+          <td class="anc3_col">
+            <select name="entry.1272464287">
+              <option value="NA">NA</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+            </select>
+          </td>
+          <td class="anc4_col">
+            <select name="entry.355492577">
+              <option value="NA">NA</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Chest: auscultate for chest and heart abnormality</td>
+          <td class="anc1_col">
+            <select name="entry.1928203921">
+              <option value="NA">NA</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+            </select>
+          </td>
+          <td class="anc2_col">
+            <select name="entry.1869314454">
+              <option value="NA">NA</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+            </select>
+          </td>
+          <td class="anc3_col">
+            <select name="entry.688856136">
+              <option value="NA">NA</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+            </select>
+          </td>
+          <td class="anc4_col">
+            <select name="entry.390257959">
+              <option value="NA">NA</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            Abdomen: measure uterine height (in centimeters and determine
+            uterine height
+          </td>
+          <td class="anc1_col">
+            <select name="entry.497357672">
+              <option value="NA">NA</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+            </select>
+          </td>
+          <td class="anc2_col">
+            <select name="entry.305800207">
+              <option value="NA">NA</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+            </select>
+          </td>
+          <td class="anc3_col">
+            <select name="entry.1634633767">
+              <option value="NA">NA</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+            </select>
+          </td>
+          <td class="anc4_col">
+            <select name="entry.1511877122">
+              <option value="NA">NA</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Auscultate for fetal heartbeat</td>
+          <td class="anc1_col">
+            <select name="entry.2011563763">
+              <option value="NA">NA</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+            </select>
+          </td>
+          <td class="anc2_col">
+            <select name="entry.336313010">
+              <option value="NA">NA</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+            </select>
+          </td>
+          <td class="anc3_col">
+            <select name="entry.735316827">
+              <option value="NA">NA</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+            </select>
+          </td>
+          <td class="anc4_col">
+            <select name="entry.2137204992">
+              <option value="NA">NA</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            Gynecological Exam: consider vaginal examination (using a speculum),
+            look for vulval ulcer, vaginal discharge, scratch marks, pelvic
+            mass, cervical lesion and estimate uterine size in first trimester,
+            genital malformation, severe FGM.
+          </td>
+          <td class="anc1_col">
+            <select name="entry.230043775">
+              <option value="NA">NA</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+            </select>
+          </td>
+          <td class="anc2_col">
+            <select name="entry.1428935451">
+              <option value="NA">NA</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+            </select>
+          </td>
+          <td class="anc3_col">
+            <select name="entry.1201114031">
+              <option value="NA">NA</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+            </select>
+          </td>
+          <td class="anc4_col">
+            <select name="entry.743038717">
+              <option value="NA">NA</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            Other alarming signs of disease: shortness of breath, coughing,
+            generalized edema, others.
+          </td>
+          <td class="anc1_col">
+            <select name="entry.1962684052">
+              <option value="NA">NA</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+            </select>
+          </td>
+          <td class="anc2_col">
+            <select name="entry.1619176367">
+              <option value="NA">NA</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+            </select>
+          </td>
+          <td class="anc3_col">
+            <select name="entry.2108737696">
+              <option value="NA">NA</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+            </select>
+          </td>
+          <td class="anc4_col">
+            <select name="entry.537896752">
+              <option value="NA">NA</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            Assess for symptoms of AIDS and HIV as per WHO Clinical Staging
+            System for HIV status for HIV positive women
+          </td>
+          <td class="anc1_col">
+            <select name="entry.434384854">
+              <option value="NA">NA</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+            </select>
+          </td>
+          <td class="anc2_col">
+            <select name="entry.1482423683">
+              <option value="NA">NA</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+            </select>
+          </td>
+          <td class="anc3_col">
+            <select name="entry.1504187399">
+              <option value="NA">NA</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+            </select>
+          </td>
+          <td class="anc4_col">
+            <select name="entry.1044252693">
+              <option value="NA">NA</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+      <p>
+        Could you please weigh the activities under physical examination if you
+        think they can be used to measure effective ANC coverage? Please use a
+        likert scale to weigh the activities. (Zero meaning the least relevant
+        to measure effective ANC coverage and 10 means the most significant
+        group of interventions to measure effective ANC coverage)
+      </p>
+      <table>
+        <tr>
+          <th>Activity on the intervention components</th>
+          <th class="anc1_col">ANC 1</th>
+          <th class="anc2_col">ANC 2</th>
+          <th class="anc3_col">ANC 3</th>
+          <th class="anc4_col">ANC 4</th>
+        </tr>
+        <tr>
+          <td>General appearance (signs of physical abuse)</td>
+          <td class="anc1_col">
+            <select name="entry.1275035611">
+              <option value="NA">NA</option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </td>
+          <td class="anc2_col">
+            <select name="entry.55877315">
+              <option value="NA">NA</option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </td>
+          <td class="anc3_col">
+            <select name="entry.95347517">
+              <option value="NA">NA</option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </td>
+          <td class="anc4_col">
+            <select name="entry.291720085">
+              <option value="NA">NA</option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Vital signs: BP, PR, Temperature, RR;</td>
+          <td class="anc1_col">
+            <select name="entry.804149434">
+              <option value="NA">NA</option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </td>
+          <td class="anc2_col">
+            <select name="entry.1583546448">
+              <option value="NA">NA</option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </td>
+          <td class="anc3_col">
+            <select name="entry.1551579239">
+              <option value="NA">NA</option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </td>
+          <td class="anc4_col">
+            <select name="entry.306414017">
+              <option value="NA">NA</option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            HEENT: Check for signs of severe anemia: pale complexion,
+            fingernails, conjunctiva, buccal mucosa, tip of tongue and shortness
+            of breath. Look for oral hygiene, dental carries
+          </td>
+          <td class="anc1_col">
+            <select name="entry.2049278276">
+              <option value="NA">NA</option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </td>
+          <td class="anc2_col">
+            <select name="entry.461420961">
+              <option value="NA">NA</option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </td>
+          <td class="anc3_col">
+            <select name="entry.1321414642">
+              <option value="NA">NA</option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </td>
+          <td class="anc4_col">
+            <select name="entry.344997845">
+              <option value="NA">NA</option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            Check for signs of jaundice record weight and height to assess the
+            mother's nutritional status
+          </td>
+          <td class="anc1_col">
+            <select name="entry.477727041">
+              <option value="NA">NA</option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </td>
+          <td class="anc2_col">
+            <select name="entry.1516783214">
+              <option value="NA">NA</option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </td>
+          <td class="anc3_col">
+            <select name="entry.625457230">
+              <option value="NA">NA</option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </td>
+          <td class="anc4_col">
+            <select name="entry.1664892035">
+              <option value="NA">NA</option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Do breast examination</td>
+          <td class="anc1_col">
+            <select name="entry.1007741598">
+              <option value="NA">NA</option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </td>
+          <td class="anc2_col">
+            <select name="entry.1976320577">
+              <option value="NA">NA</option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </td>
+          <td class="anc3_col">
+            <select name="entry.274954620">
+              <option value="NA">NA</option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </td>
+          <td class="anc4_col">
+            <select name="entry.37523578">
+              <option value="NA">NA</option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Chest: auscultate for chest and heart abnormality</td>
+          <td class="anc1_col">
+            <select name="entry.373574216">
+              <option value="NA">NA</option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </td>
+          <td class="anc2_col">
+            <select name="entry.87284648">
+              <option value="NA">NA</option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </td>
+          <td class="anc3_col">
+            <select name="entry.807284495">
+              <option value="NA">NA</option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </td>
+          <td class="anc4_col">
+            <select name="entry.1724247408">
+              <option value="NA">NA</option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            Abdomen: measure uterine height (in centimeters and determine
+            uterine height
+          </td>
+          <td class="anc1_col">
+            <select name="entry.1100803894">
+              <option value="NA">NA</option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </td>
+          <td class="anc2_col">
+            <select name="entry.1784059053">
+              <option value="NA">NA</option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </td>
+          <td class="anc3_col">
+            <select name="entry.1588685110">
+              <option value="NA">NA</option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </td>
+          <td class="anc4_col">
+            <select name="entry.200900667">
+              <option value="NA">NA</option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Auscultate for fetal heartbeat</td>
+          <td class="anc1_col">
+            <select name="entry.1952480212">
+              <option value="NA">NA</option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </td>
+          <td class="anc2_col">
+            <select name="entry.637430672">
+              <option value="NA">NA</option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </td>
+          <td class="anc3_col">
+            <select name="entry.2069771907">
+              <option value="NA">NA</option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </td>
+          <td class="anc4_col">
+            <select name="entry.2061899925">
+              <option value="NA">NA</option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            Gynecological Exam: consider vaginal examination (using a speculum),
+            look for vulval ulcer, vaginal discharge, scratch marks, pelvic
+            mass, cervical lesion and estimate uterine size in first trimester,
+            genital malformation, severe FGM.
+          </td>
+          <td class="anc1_col">
+            <select name="entry.825108648">
+              <option value="NA">NA</option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </td>
+          <td class="anc2_col">
+            <select name="entry.1892617109">
+              <option value="NA">NA</option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </td>
+          <td class="anc3_col">
+            <select name="entry.2028879133">
+              <option value="NA">NA</option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </td>
+          <td class="anc4_col">
+            <select name="entry.1539242399">
+              <option value="NA">NA</option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            Other alarming signs of disease: shortness of breath, coughing,
+            generalized edema, others.
+          </td>
+          <td class="anc1_col">
+            <select name="entry.1357405683">
+              <option value="NA">NA</option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </td>
+          <td class="anc2_col">
+            <select name="entry.651343347">
+              <option value="NA">NA</option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </td>
+          <td class="anc3_col">
+            <select name="entry.1165146476">
+              <option value="NA">NA</option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </td>
+          <td class="anc4_col">
+            <select name="entry.1800591946">
+              <option value="NA">NA</option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            Assess for symptoms of AIDS and HIV as per WHO Clinical Staging
+            System for HIV status for HIV positive women
+          </td>
+          <td class="anc1_col">
+            <select name="entry.1570944937">
+              <option value="NA">NA</option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </td>
+          <td class="anc2_col">
+            <select name="entry.233253342">
+              <option value="NA">NA</option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </td>
+          <td class="anc3_col">
+            <select name="entry.1433912351">
+              <option value="NA">NA</option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </td>
+          <td class="anc4_col">
+            <select name="entry.270199998">
+              <option value="NA">NA</option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+      <button type="submit" id="phyexam-btn">Submit</button>
+    </form>
+    <script src="./physical_exam.js"></script>
+  </body>
+</html>
