@@ -5,18 +5,56 @@ img {
   margin: auto;
   align-self: center;
 }
-form, h3 {
+form {
   width: 80%;
   margin: auto;
   margin-top: 50px;
 }
 
+div.links {
+  width: 70%;
+  margin: auto;
+  text-align: left;
+}
+
+ul {
+  margin-bottom: 150px;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+li {
+  list-style: none;
+  font-size: 1.25rem;
+  height: 2rem;
+  margin: 1rem 0;
+}
+
+li>a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #33A699;
+  border-radius: 5px;
+  align-items: center;
+  padding: 0 0.5rem;
+}
+
+li>a:hover {
+  background-color: #33A699;
+  color: white;
+}
+
 .heading-container {
   text-align: center;
+  margin: auto;
+  width: 70%;
 }
 
 p {
-  width: 60%;
+  width: 70%;
   margin: auto;
   font-size: 1.1rem;
   margin-top: .5rem;
@@ -68,8 +106,8 @@ button {
   width: 200px;
   height: 50px;
   border-radius: 8px;
-  background-color: lightgreen;
-  box-shadow: 5px 6px rgb(98, 95, 95);
+  background-color: #33A699;
+  box-shadow: 5px 6px rgb(177, 176, 176);
   font-size: 20px;
 }
 
