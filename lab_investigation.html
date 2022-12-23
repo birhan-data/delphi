@@ -24,6 +24,7 @@
             id="lab_inv_yes"
             name="entry.1369105283"
             value="Yes"
+            onclick="handleRadioClick(this);"
           />
           <label for="lab_inv_yes">Yes</label>
         </div>
@@ -33,18 +34,19 @@
             id="lab_inv_no"
             name="entry.1369105283"
             value="No"
+            onclick="handleRadioClick(this);"
           />
           <label for="lab_inv_no">No</label>
         </div>
       </fieldset>
-      <p>
+      <p class="if_yes">
         If you think laboratory investigation should be considered as an
         effective ANC coverage measure, which tests could be used to measure
         effective ANC coverage from the activities under laboratory
         investigation? Please put the following list of activities in order of
         importance
       </p>
-      <table>
+      <table class="if_yes">
         <tr>
           <th>Activity on the intervention components</th>
           <th>ANC 1</th>
@@ -1257,5 +1259,6 @@
 
       <button type="submit" id="lab-btn">Submit</button>
     </form>
+    <script src="./lab_investigation.js"></script>
   </body>
 </html>
