@@ -116,3 +116,7 @@ button:hover {
   height: 53px;
   cursor: pointer;
 }
+
+li>a:visited {
+  background-color: #33A699;
+}

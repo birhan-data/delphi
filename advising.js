@@ -1,7 +1,6 @@
 let if_yess = [];
+let submittedLinks = [];
 document.querySelectorAll('.if_yes').forEach(ele => if_yess.push(ele));
-
-let anc1_checkbox;
 
 let anc_checkboxs = [];
 
@@ -25,7 +24,6 @@ function showCheckedAncColsTable() {
     document.querySelectorAll('[class$="col"]').forEach(cell => {
       cell.hidden = true;
     })
-
   }
 }
 
@@ -57,3 +55,16 @@ function handleRadioClick(input) {
 }
 
 if_yess.forEach(el => el.hidden = true);
+
+document.getElementById('submit-btn').addEventListener('click', event => {
+  if(!submittedLinks.includes(7)) {
+    submittedLinks.push(7)
+    localStorage.setItem('submittedLinks', JSON.stringify(submittedLinks));
+  }
+})
+
+async function initialize() {
+  submittedLinks = await JSON.parse(localStorage.getItem('submittedLinks') || '[]');
+}
+
+initialize();
