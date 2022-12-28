@@ -68,6 +68,7 @@ anc2_cols.forEach(check => {
     if (selectedsAnc2.includes(event.target.value)){      
       anc2_err.textContent = "You have selected duplicated value"
       anc2_err.style.color = "red"
+      event.target.value="NA"
       document.getElementById("submit-btn").disabled = true;
       } else {
       selectedsAnc2.push(event.target.value)
@@ -87,6 +88,7 @@ anc3_cols.forEach(check => {
     if (selectedsAnc3.includes(event.target.value)){      
       anc3_err.textContent = "You have selected duplicated value"
       anc3_err.style.color = "red"
+      event.target.value="NA"
       document.getElementById("submit-btn").disabled = true;
       } else {
       selectedsAnc3.push(event.target.value)
@@ -106,6 +108,7 @@ anc4_cols.forEach(check => {
     if (selectedsAnc4.includes(event.target.value)){      
       anc4_err.textContent = "You have selected duplicated value"
       anc4_err.style.color = "red"
+      event.target.value="NA"
       document.getElementById("submit-btn").disabled = true;
       handleSubmitbtn()
       } else {
