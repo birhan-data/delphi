@@ -11,17 +11,17 @@ function showCheckedAncColsTable() {
   if(allChecked.length > 0) {
     [1, 2, 3, 4].forEach(checkbox => {
       if(allChecked.includes(checkbox)) {
-        document.querySelectorAll(`.anc${checkbox}_col`).forEach(ele => {
+        document.querySelectorAll(`.anc${checkbox}_col, .anc${checkbox}_col_rate`).forEach(ele => {
           ele.hidden = false
         });
       } else {
-        document.querySelectorAll(`.anc${checkbox}_col`).forEach(ele => {
+        document.querySelectorAll(`.anc${checkbox}_col, .anc${checkbox}_col_rate`).forEach(ele => {
           ele.hidden = true
         });
       }
     })
   } else {
-    document.querySelectorAll('[class$="col"]').forEach(cell => {
+    document.querySelectorAll('[class$="col"],[class$="col_rate"]').forEach(cell => {
       cell.hidden = true;
     })
 
@@ -121,23 +121,13 @@ anc4_cols.forEach(check => {
   })
 })
 
-function handleSubmitbtn(){
-  let if_error = [];
-   [1, 2, 3, 4].forEach(i => {
-    if_error.push(document.querySelectorAll(`.anc${i}_err`).values)
-   
-    
-
-  })
-  console.log(if_error)
-}
 
 
 function handleRadioClick(input) {
   if(input.value=='Yes') {
     if_yess.forEach(el => el.hidden = false);
     
-    document.querySelectorAll('[class$="col"]').forEach(cell => {
+    document.querySelectorAll('[class$="col"],[class$="col_rate"]').forEach(cell => {
       cell.hidden = true;
     })
     handleAncCheck();
