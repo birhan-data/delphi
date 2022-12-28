@@ -41,13 +41,14 @@ function handleAncCheck() {
 
 let selectedsAnc1 = [];
 let anc1_cols = document.querySelectorAll('.anc1_col');
-var anc1_err = document.getElementById("anc1_err")
+var anc1_err = document.getElementById("error")
 
 anc1_cols.forEach(check => {
   check.addEventListener('change', (event) => {
     if (selectedsAnc1.includes(event.target.value)){      
       anc1_err.textContent = "You have selected duplicated value"
       anc1_err.style.color = "red"
+      event.target.value="NA"
       document.getElementById("submit-btn").disabled = true;
       } else {
       selectedsAnc1.push(event.target.value)
@@ -60,7 +61,7 @@ anc1_cols.forEach(check => {
 
 let selectedsAnc2 = [];
 let anc2_cols = document.querySelectorAll('.anc2_col');
-var anc2_err = document.getElementById("anc2_err")
+var anc2_err = document.getElementById("error")
 
 anc2_cols.forEach(check => {
   check.addEventListener('change', (event) => {
@@ -79,7 +80,7 @@ anc2_cols.forEach(check => {
 
 let selectedsAnc3 = [];
 let anc3_cols = document.querySelectorAll('.anc3_col');
-var anc3_err = document.getElementById("anc3_err")
+var anc3_err = document.getElementById("error")
 
 anc3_cols.forEach(check => {
   check.addEventListener('change', (event) => {
@@ -98,7 +99,7 @@ anc3_cols.forEach(check => {
 
 let selectedsAnc4 = [];
 let anc4_cols = document.querySelectorAll('.anc4_col');
-var anc4_err = document.getElementById("anc4_err")
+var anc4_err = document.getElementById("error")
 
 anc4_cols.forEach(check => {
   check.addEventListener('change', (event) => {
@@ -106,17 +107,27 @@ anc4_cols.forEach(check => {
       anc4_err.textContent = "You have selected duplicated value"
       anc4_err.style.color = "red"
       document.getElementById("submit-btn").disabled = true;
+      handleSubmitbtn()
       } else {
       selectedsAnc4.push(event.target.value)
       anc4_err.textContent = ""
        document.getElementById("submit-btn").disabled = false;
+       handleSubmitbtn()
     }
   
   })
 })
 
+function handleSubmitbtn(){
+  let if_error = [];
+   [1, 2, 3, 4].forEach(i => {
+    if_error.push(document.querySelectorAll(`.anc${i}_err`).values)
+   
+    
 
-
+  })
+  console.log(if_error)
+}
 
 
 function handleRadioClick(input) {
