@@ -39,6 +39,86 @@ function handleAncCheck() {
   })
 }
 
+let selectedsAnc1 = [];
+let anc1_cols = document.querySelectorAll('.anc1_col');
+var anc1_err = document.getElementById("anc1_err")
+
+anc1_cols.forEach(check => {
+  check.addEventListener('change', (event) => {
+    if (selectedsAnc1.includes(event.target.value)){      
+      anc1_err.textContent = "You have selected duplicated value"
+      anc1_err.style.color = "red"
+      document.getElementById("submit-btn").disabled = true;
+      } else {
+      selectedsAnc1.push(event.target.value)
+       error.textContent = ""
+       document.getElementById("submit-btn").disabled = false;
+    }
+  
+  })
+})
+
+let selectedsAnc2 = [];
+let anc2_cols = document.querySelectorAll('.anc2_col');
+var anc2_err = document.getElementById("anc2_err")
+
+anc2_cols.forEach(check => {
+  check.addEventListener('change', (event) => {
+    if (selectedsAnc2.includes(event.target.value)){      
+      anc2_err.textContent = "You have selected duplicated value"
+      anc2_err.style.color = "red"
+      document.getElementById("submit-btn").disabled = true;
+      } else {
+      selectedsAnc2.push(event.target.value)
+      anc2_err.textContent = ""
+       document.getElementById("submit-btn").disabled = false;
+    }
+  
+  })
+})
+
+let selectedsAnc3 = [];
+let anc3_cols = document.querySelectorAll('.anc3_col');
+var anc3_err = document.getElementById("anc3_err")
+
+anc3_cols.forEach(check => {
+  check.addEventListener('change', (event) => {
+    if (selectedsAnc3.includes(event.target.value)){      
+      anc3_err.textContent = "You have selected duplicated value"
+      anc3_err.style.color = "red"
+      document.getElementById("submit-btn").disabled = true;
+      } else {
+      selectedsAnc3.push(event.target.value)
+      anc3_err.textContent = ""
+       document.getElementById("submit-btn").disabled = false;
+    }
+  
+  })
+})
+
+let selectedsAnc4 = [];
+let anc4_cols = document.querySelectorAll('.anc4_col');
+var anc4_err = document.getElementById("anc4_err")
+
+anc4_cols.forEach(check => {
+  check.addEventListener('change', (event) => {
+    if (selectedsAnc4.includes(event.target.value)){      
+      anc4_err.textContent = "You have selected duplicated value"
+      anc4_err.style.color = "red"
+      document.getElementById("submit-btn").disabled = true;
+      } else {
+      selectedsAnc4.push(event.target.value)
+      anc4_err.textContent = ""
+       document.getElementById("submit-btn").disabled = false;
+    }
+  
+  })
+})
+
+
+
+
+
 function handleRadioClick(input) {
   if(input.value=='Yes') {
     if_yess.forEach(el => el.hidden = false);
