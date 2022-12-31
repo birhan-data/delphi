@@ -45,13 +45,28 @@ var anc1_err = document.getElementById("error")
 
 anc1_cols.forEach(check => {
   check.addEventListener('change', (event) => {
-    if (selectedsAnc1.includes(event.target.value)){      
+    if (selectedsAnc1.includes(event.target.value)){
+        let selected_anc1_on_collision = [];
+        document.querySelectorAll(".table_1_anc_1").forEach((dd) => {
+          if (dd.value == event.target.value) {
+            dd.value = "NA";
+            selected_anc1_on_collision.push("NA");
+          } else {
+            selected_anc1_on_collision.push(dd.value);
+          }
+        });
+  
+        selectedsAnc1 = selected_anc1_on_collision;      
       anc1_err.textContent = "You have selected duplicated value"
       anc1_err.style.color = "red"
       event.target.value="NA"
       document.getElementById("submit-btn").disabled = true;
       } else {
-      selectedsAnc1.push(event.target.value)
+        selectedsAnc1 = [];
+      document.querySelectorAll(".table_1_anc_1").forEach((dropdown) => {
+        selectedsAnc1.push(dropdown.value);
+      });
+      
        error.textContent = ""
        document.getElementById("submit-btn").disabled = false;
     }
@@ -65,13 +80,28 @@ var anc2_err = document.getElementById("error")
 
 anc2_cols.forEach(check => {
   check.addEventListener('change', (event) => {
-    if (selectedsAnc2.includes(event.target.value)){      
+    if (selectedsAnc2.includes(event.target.value)){  
+      let selected_anc2_on_collision = [];
+      document.querySelectorAll(".table_1_anc_2").forEach((dd) => {
+        if (dd.value == event.target.value) {
+          dd.value = "NA";
+          selected_anc2_on_collision.push("NA");
+        } else {
+          selected_anc2_on_collision.push(dd.value);
+        }
+      });
+
+      selectedsAnc2 = selected_anc2_on_collision;         
       anc2_err.textContent = "You have selected duplicated value"
       anc2_err.style.color = "red"
       event.target.value="NA"
       document.getElementById("submit-btn").disabled = true;
       } else {
-      selectedsAnc2.push(event.target.value)
+        selectedsAnc2 = [];
+      document.querySelectorAll(".table_1_anc_2").forEach((dropdown) => {
+        selectedsAnc2.push(dropdown.value);
+      });
+     
       anc2_err.textContent = ""
        document.getElementById("submit-btn").disabled = false;
     }
@@ -85,13 +115,28 @@ var anc3_err = document.getElementById("error")
 
 anc3_cols.forEach(check => {
   check.addEventListener('change', (event) => {
-    if (selectedsAnc3.includes(event.target.value)){      
+    if (selectedsAnc3.includes(event.target.value)){ 
+      let selected_anc3_on_collision = [];
+      document.querySelectorAll(".table_1_anc_3").forEach((dd) => {
+        if (dd.value == event.target.value) {
+          dd.value = "NA";
+          selected_anc3_on_collision.push("NA");
+        } else {
+          selected_anc3_on_collision.push(dd.value);
+        }
+      });
+
+      selectedsAnc3 = selected_anc3_on_collision;         
       anc3_err.textContent = "You have selected duplicated value"
       anc3_err.style.color = "red"
       event.target.value="NA"
       document.getElementById("submit-btn").disabled = true;
       } else {
-      selectedsAnc3.push(event.target.value)
+        selectedsAnc3 = [];
+        document.querySelectorAll(".table_1_anc_3").forEach((dropdown) => {
+          selectedsAnc3.push(dropdown.value);
+        });
+     
       anc3_err.textContent = ""
        document.getElementById("submit-btn").disabled = false;
     }
@@ -105,14 +150,29 @@ var anc4_err = document.getElementById("error")
 
 anc4_cols.forEach(check => {
   check.addEventListener('change', (event) => {
-    if (selectedsAnc4.includes(event.target.value)){      
+    if (selectedsAnc4.includes(event.target.value)){  
+      let selected_anc4_on_collision = [];
+      document.querySelectorAll(".table_1_anc_4").forEach((dd) => {
+        if (dd.value == event.target.value) {
+          dd.value = "NA";
+          selected_anc4_on_collision.push("NA");
+        } else {
+          selected_anc4_on_collision.push(dd.value);
+        }
+      });
+
+      selectedsAnc4 = selected_anc4_on_collision;         
       anc4_err.textContent = "You have selected duplicated value"
       anc4_err.style.color = "red"
       event.target.value="NA"
       document.getElementById("submit-btn").disabled = true;
       handleSubmitbtn()
       } else {
-      selectedsAnc4.push(event.target.value)
+        selectedsAnc4 = [];
+        document.querySelectorAll(".table_1_anc_4").forEach((dropdown) => {
+          selectedsAnc4.push(dropdown.value);
+        });
+      
       anc4_err.textContent = ""
        document.getElementById("submit-btn").disabled = false;
        handleSubmitbtn()
@@ -120,6 +180,7 @@ anc4_cols.forEach(check => {
   
   })
 })
+
 
 function handleRadioClick(input) {
   if(input.value=='Yes') {
