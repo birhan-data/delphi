@@ -8,6 +8,7 @@ function showCheckedAncColsTable() {
   let allChecked = Array.from(document.querySelectorAll(".anc:checked")).map(
     (c) => Number(c.value.substring(c.value.length - 1))
   );
+  console.log(allChecked);
 
   if (allChecked.length > 0) {
     [1, 2, 3, 4].forEach((checkbox) => {
@@ -32,6 +33,12 @@ function showCheckedAncColsTable() {
         cell.hidden = true;
       });
   }
+
+  document.getElementById("submit-btn").disabled = true;
+  document.getElementById("validate-btn").disabled = false;
+  document.getElementById("validate-btn").removeAttribute("hidden");
+  document.getElementById("submit-btn").setAttribute("hidden", "hidden")
+
 }
 
 function handleAncCheck() {
@@ -66,8 +73,8 @@ function handleRadioClick(input) {
 if_yess.forEach((el) => (el.hidden = true));
 
 document.getElementById("submit-btn").addEventListener("click", (event) => {
-  if (!submittedLinks.includes(8)) {
-    submittedLinks.push(8);
+  if (!submittedLinks.includes(4)) {
+    submittedLinks.push(4);
     localStorage.setItem("submittedLinks", JSON.stringify(submittedLinks));
   }
 });
@@ -203,7 +210,7 @@ anc4_cols.forEach((check) => {
       anc4_err.style.color = "red";
       event.target.value = "NA";
       document.getElementById("submit-btn").disabled = true;
-      handleSubmitbtn();
+     
     } else {
       selectedsAnc4 = [];
       document.querySelectorAll(".table_1_anc_4").forEach((dropdown) => {
@@ -211,7 +218,57 @@ anc4_cols.forEach((check) => {
       });
       anc4_err.textContent = "";
       document.getElementById("submit-btn").disabled = false;
-      handleSubmitbtn();
+     
     }
   });
 });
+
+document.getElementById("validate-btn").addEventListener("click", (event) => {
+  var validation_err = document.getElementById("error");
+  let valid=0
+  let notvalid=0
+  let allChecked = Array.from(document.querySelectorAll(".anc:checked")).map(
+    (c) => Number(c.value.substring(c.value.length -1))
+  );
+
+  if (allChecked.length > 0) {
+    allChecked.forEach((checkbox) => {
+      document.querySelectorAll(`.table_1_anc_${checkbox}, .table_2_anc_${checkbox} `).forEach((data) => {
+        if (data.value == "NA") {
+          
+          notvalid +=1
+          
+        }
+        else{
+          valid +=1
+          
+
+        }
+      });
+    });
+  }
+  console.log(valid )
+  console.log("notvalid")
+  console.log(notvalid )
+  if(notvalid  == 0){
+    anc4_err.textContent = "Validation successful ";
+    validation_err.style.color = "black";
+    document.getElementById("submit-btn").disabled = false;
+    document.getElementById("validate-btn").disabled = true;
+    document.getElementById("submit-btn").removeAttribute("hidden");
+    document.getElementById("validate-btn").setAttribute("hidden", "hidden")
+
+  } else{
+
+
+    console.log("NA value entered");
+    validation_err.textContent = "Please Enter all values";
+    validation_err.style.color = "red";
+    document.getElementById("submit-btn").disabled = true;
+    document.getElementById("validate-btn").disabled = false;
+    document.getElementById("validate-btn").removeAttribute("hidden");
+    document.getElementById("submit-btn").setAttribute("hidden", "hidden")
+  }
+});
+
+
