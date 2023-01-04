@@ -19,7 +19,7 @@
     >
       <h4>General questions</h4>
       <!--General Questons 1-->
-      <span id="error"></span>
+      
       <table>
         <tr>
           <th>Question</th>
@@ -125,7 +125,7 @@
             significant group of interventions to measure effective ANC coverage
           </td>
           <td>
-            <select name="entry.2050915250">
+            <select class="table_2_anc_1"name="entry.2050915250">
               <option value="NA">Select...</option>
               <option value="0">0</option>
               <option value="1">1</option>
@@ -141,7 +141,7 @@
             </select>
           </td>
           <td>
-            <select name="entry.1181239185">
+            <select class="table_2_anc_1" name="entry.1181239185">
               <option value="NA">Select...</option>
               <option value="0">0</option>
               <option value="1">1</option>
@@ -157,7 +157,7 @@
             </select>
           </td>
           <td>
-            <select name="entry.777473577">
+            <select class="table_2_anc_1" name="entry.777473577">
               <option value="NA">Select...</option>
               <option value="0">0</option>
               <option value="1">1</option>
@@ -173,7 +173,7 @@
             </select>
           </td>
           <td>
-            <select name="entry.91443353">
+            <select class="table_2_anc_1" name="entry.91443353">
               <option value="NA">Select...</option>
               <option value="0">0</option>
               <option value="1">1</option>
@@ -189,7 +189,7 @@
             </select>
           </td>
           <td>
-            <select name="entry.927468205">
+            <select class="table_2_anc_1" name="entry.927468205">
               <option value="NA">Select...</option>
               <option value="0">0</option>
               <option value="1">1</option>
@@ -205,7 +205,7 @@
             </select>
           </td>
           <td>
-            <select name="entry.1341921375">
+            <select class="table_2_anc_1" name="entry.1341921375">
               <option value="NA">Select...</option>
               <option value="0">0</option>
               <option value="1">1</option>
@@ -222,7 +222,9 @@
           </td>
         </tr>
       </table>
-      <button type="submit" id="submit-btn">Submit</button>
+      <p id="error"></p>
+      <button type="submit" id="submit-btn" hidden="true">Submit</button>
+      <button type="button" id="validate-btn">validate</button>
     </form>
     <script src="./intro.js"></script>
   </body>
