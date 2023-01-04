@@ -49,3 +49,45 @@ async function initialize() {
 }
 
 initialize();
+
+
+document.getElementById("validate-btn").addEventListener("click", (event) => {
+  var validation_err = document.getElementById("error");
+  let valid = 0;
+  let notvalid = 0;
+  // let allChecked = Array.from(document.querySelectorAll(".anc:checked")).map(
+  //   (c) => Number(c.value.substring(c.value.length - 1))
+  // );
+
+  // if (allChecked.length > 0) {
+  //   allChecked.forEach((checkbox) => {
+      document.querySelectorAll(`.table_1_anc_1, .table_2_anc_1 `)
+        .forEach((data) => {
+          if (data.value == "NA") {
+            notvalid += 1;
+          } else {
+            valid += 1;
+          }
+        });
+  //   });
+  // }
+  console.log(valid);
+  console.log("notvalid");
+  console.log(notvalid);
+  if (notvalid == 0) {
+    validation_err.textContent = "Validation successful ";
+    validation_err.style.color = "black";
+    document.getElementById("submit-btn").disabled = false;
+    document.getElementById("validate-btn").disabled = true;
+    document.getElementById("submit-btn").removeAttribute("hidden");
+    document.getElementById("validate-btn").setAttribute("hidden", "hidden");
+  } else {
+    console.log("NA value entered");
+    validation_err.textContent = "Please Enter all values";
+    validation_err.style.color = "red";
+    document.getElementById("submit-btn").disabled = true;
+    document.getElementById("validate-btn").disabled = false;
+    document.getElementById("validate-btn").removeAttribute("hidden");
+    document.getElementById("submit-btn").setAttribute("hidden", "hidden");
+  }
+});
