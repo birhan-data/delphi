@@ -60,12 +60,14 @@ function handleRadioClick(input) {
       .forEach((cell) => {
         cell.hidden = true;
       });
+      enableValidateButt();
     handleAncCheck();
   } else {
     if (anc_checkboxs.length > 0) {
       anc_checkboxs.forEach((cb) => (cb.checked = false));
     }
     if_yess.forEach((el) => (el.hidden = true));
+    enableSubmiteButt();
   }
 }
 
@@ -117,6 +119,7 @@ anc1_cols.forEach((check) => {
       error.textContent = "";
       document.getElementById("submit-btn").disabled = false;
     }
+    enableValidateButt()
   });
 });
 
@@ -151,6 +154,7 @@ anc2_cols.forEach((check) => {
       anc2_err.textContent = "";
       document.getElementById("submit-btn").disabled = false;
     }
+    enableValidateButt()
   });
 });
 
@@ -185,6 +189,7 @@ anc3_cols.forEach((check) => {
       anc3_err.textContent = "";
       document.getElementById("submit-btn").disabled = false;
     }
+    enableValidateButt()
   });
 });
 
@@ -217,6 +222,7 @@ anc4_cols.forEach((check) => {
       anc4_err.textContent = "";
       document.getElementById("submit-btn").disabled = false;
     }
+    enableValidateButt()
   });
 });
 
@@ -261,3 +267,21 @@ document.getElementById("validate-btn").addEventListener("click", (event) => {
     document.getElementById("submit-btn").setAttribute("hidden", "hidden");
   }
 });
+
+
+function enableValidateButt() {
+  document.getElementById("submit-btn").disabled = true;
+  document.getElementById("validate-btn").disabled = false;
+  document.getElementById("validate-btn").removeAttribute("hidden");
+  document.getElementById("submit-btn").setAttribute("hidden", "hidden");
+  document.getElementById("error").textContent="";
+ 
+}
+
+function enableSubmiteButt() {
+  document.getElementById("submit-btn").disabled = false;
+  document.getElementById("validate-btn").disabled = true;
+  document.getElementById("submit-btn").removeAttribute("hidden");
+  document.getElementById("validate-btn").setAttribute("hidden", "hidden");
+  document.getElementById("error").textContent="";
+}
