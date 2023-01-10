@@ -5,6 +5,7 @@ let submittedLinks = [];
 formLinks.forEach(fl => {
   fl.addEventListener('click', (event) => {
     let clickedLink = event.target.classList[0].substring(5)
+    console.log(clickedLink)
     if(!clickedLinks.includes(clickedLink)) {
       clickedLinks.push(clickedLink)
       localStorage.setItem('clickedLinks', JSON.stringify(clickedLinks))
