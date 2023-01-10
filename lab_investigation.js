@@ -2,15 +2,70 @@ let if_yess = [];
 let submittedLinks = [];
 document.querySelectorAll(".if_yes").forEach((ele) => if_yess.push(ele));
 
+let anc_checkboxs = [];
+
+function showCheckedAncColsTable() {
+  let allChecked = Array.from(document.querySelectorAll(".anc:checked")).map(
+    (c) => Number(c.value.substring(c.value.length - 1))
+  );
+  console.log(allChecked);
+
+  if (allChecked.length > 0) {
+    [1, 2, 3, 4].forEach((checkbox) => {
+      if (allChecked.includes(checkbox)) {
+        document
+          .querySelectorAll(`.anc${checkbox}_col, .anc${checkbox}_col_rate`)
+          .forEach((ele) => {
+            ele.hidden = false;
+          });
+      } else {
+        document
+          .querySelectorAll(`.anc${checkbox}_col, .anc${checkbox}_col_rate`)
+          .forEach((ele) => {
+            ele.hidden = true;
+          });
+      }
+    });
+  } else {
+    document
+      .querySelectorAll('[class$="col"],[class$="col_rate"]')
+      .forEach((cell) => {
+        cell.hidden = true;
+      });
+  }
+
+  document.getElementById("submit-btn").disabled = true;
+  document.getElementById("validate-btn").disabled = false;
+  document.getElementById("validate-btn").removeAttribute("hidden");
+  document.getElementById("submit-btn").setAttribute("hidden", "hidden");
+}
+
+function handleAncCheck() {
+  [1, 2, 3, 4].forEach((num) => {
+    anc_checkboxs.push(document.getElementById(`anc${num}`));
+  });
+  anc_checkboxs.forEach((check) => {
+    check.addEventListener("change", (event) => {
+      showCheckedAncColsTable();
+    });
+  });
+}
+
 function handleRadioClick(input) {
   if (input.value == "Yes") {
     if_yess.forEach((el) => (el.hidden = false));
 
-    document.querySelectorAll('[class$="col2"]').forEach((cell) => {
-      cell.hidden = true;
-    });
-    enableValidateButt();
+    document
+      .querySelectorAll('[class$="col"],[class$="col_rate"]')
+      .forEach((cell) => {
+        cell.hidden = true;
+      });
+      enableValidateButt();
+    handleAncCheck();
   } else {
+    if (anc_checkboxs.length > 0) {
+      anc_checkboxs.forEach((cb) => (cb.checked = false));
+    }
     if_yess.forEach((el) => (el.hidden = true));
     enableSubmiteButt();
   }
@@ -179,9 +234,12 @@ document.getElementById("validate-btn").addEventListener("click", (event) => {
   var validation_err = document.getElementById("error");
   let valid = 0;
   let notvalid = 0;
+  let allChecked = Array.from(document.querySelectorAll(".anc:checked")).map(
+    (c) => Number(c.value.substring(c.value.length - 1))
+  );
 
-  if (document.getElementById("lab_inv_yes").checked) {
-    [1, 2, 3, 4].forEach((checkbox) => {
+  if (allChecked.length > 0) {
+    allChecked.forEach((checkbox) => {
       document
         .querySelectorAll(`.table_1_anc_${checkbox}, .table_2_anc_${checkbox} `)
         .forEach((data) => {
